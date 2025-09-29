@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import io, { Socket } from 'socket.io-client';
 
-export const useSocket = (serverUrl: string = 'https://project-live-polling-backend-2.onrender.com') => {  // Use useState to store the socket instance
+export const useSocket = (serverUrl: string = ' https://project-live-polling-backend-1.onrender.com') => {  // Use useState to store the socket instance
   const [socket, setSocket] = useState<Socket | null>(null);
 
   useEffect(() => {
