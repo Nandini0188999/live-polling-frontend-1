@@ -124,7 +124,7 @@ const TeacherDashboard: React.FC<TeacherDashboardProps> = ({ socket }) => {
       alert("Please enter a question and at least two options.");
       return;
     }
-    const newPoll: CreatedPoll = { id: nextPollId, question, options: validOptions, correctOptionId, timeLimit };
+    const newPoll: CreatedPoll = { id: nextPollId, question, options: validOptions, timeLimit };
     setCreatedPolls(prev => [...prev, newPoll]);
     
     const newPollData = { question, options: validOptions.map(opt => opt.text), timeLimit };
